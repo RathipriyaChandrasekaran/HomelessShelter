@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCFFFF"
+    tools:context="com.rathipriya.findhomeshelter.MainActivity" >
+
+      <!-- Header aligned to top -->
+      
+  <RelativeLayout
+      android:id="@+id/header"
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:background="#FC9"
+      android:gravity="center" >
+    
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="5dp"
+          android:text="Look for Homeless Shelters"
+          android:textColor="#000"
+          android:textSize="20sp"
+          android:textStyle="bold" />
+       
+	  </RelativeLayout> 
+	  
+    <ImageView
+        android:id="@+id/imagehome"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/shelter" />
+   
+    <!-- Footer aligned to bottom -->
+
+	    <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_below="@+id/header"
+	        android:layout_marginTop="20dp"
+	        android:gravity="center"
+	        android:text="Find All Homeless Shelters near by your location using GPS"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textSize="20sp"
+	        android:textStyle="italic" />
+
+	    <RelativeLayout
+	        android:id="@+id/footer"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:clickable="true"
+	        android:onClick="launchMap"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentLeft="true"
+	        android:background="#FC9"
+	        android:gravity="center"
+	        android:padding="5dp" >
+
+	        <TextView
+	            android:id="@+id/textView2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignBottom="@+id/imageButton1"
+	            android:layout_alignTop="@+id/imageButton1"
+	            android:layout_margin="5dp"
+	            android:gravity="center"
+	            android:text="Click here to find a shelter"
+	            android:textColor="#000"
+	            android:textSize="20sp"
+	            android:textStyle="bold" />
+
+	        <ImageView
+	            android:id="@+id/imageButton1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true"
+	            android:src="@drawable/add1" />
+
+	    </RelativeLayout>
+	  
+</RelativeLayout>
